@@ -1,0 +1,46 @@
+using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
+
+namespace AsyncAwaitEfficiencyTest
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            const int iterationCount = 1_000_000_000;
+
+            // Test unnecessary async/await usage
+	    var count1 = 0;
+            var stopwatch = Stopwatch.StartNew();
+            for (int i = 0; i < iterationCount; i++)
+            {
+                count1 += await UnnecessaryAsyncAwait();
+            }
+            stopwatch.Stop();
+            Console.WriteLine($"Unnecessary async/await: {stopwatch.ElapsedMilliseconds} ms");
+
+	    var count2 = 0;
+            // Test without unnecessary async/await
+            stopwatch.Restart();
+            for (int i = 0; i < iterationCount; i++)
+            {
+                count2 += NoAsyncAwait();
+            }
+            stopwatch.Stop();
+            Console.WriteLine($"No async/await: {stopwatch.ElapsedMilliseconds} ms");
+	    Console.WriteLine($"count1: {count1} count2: {count2}");
+        }
+
+        static async Task<int> UnnecessaryAsyncAwait()
+        {
+            return await Task.FromResult(1); // Unnecessary async/await usage
+        }
+
+        static int NoAsyncAwait()
+        {
+            return 1;
+        }
+    }
+}
+
