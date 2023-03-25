@@ -26,13 +26,7 @@ namespace AsyncTest
             ReadAndSumNumbersSync(filePath);
             
             
-            // Synchronous approach
-            var syncStopwatch = new Stopwatch();
-            syncStopwatch.Start();
-            int syncSum = ReadAndSumNumbersSync(filePath);
-            syncStopwatch.Stop();
-            Console.WriteLine($"Synchronous sum: {syncSum}");
-            Console.WriteLine($"Synchronous time: {syncStopwatch.ElapsedMilliseconds} ms");
+            
 
             // Asynchronous approach (unnecessary async/await)
             var asyncStopwatch = new Stopwatch();
@@ -41,6 +35,14 @@ namespace AsyncTest
             asyncStopwatch.Stop();
             Console.WriteLine($"Asynchronous sum: {asyncSum}");
             Console.WriteLine($"Asynchronous time: {asyncStopwatch.ElapsedMilliseconds} ms");
+
+            // Synchronous approach
+            var syncStopwatch = new Stopwatch();
+            syncStopwatch.Start();
+            int syncSum = ReadAndSumNumbersSync(filePath);
+            syncStopwatch.Stop();
+            Console.WriteLine($"Synchronous sum: {syncSum}");
+            Console.WriteLine($"Synchronous time: {syncStopwatch.ElapsedMilliseconds} ms");
 
         }
 

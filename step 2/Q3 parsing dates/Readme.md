@@ -4,7 +4,7 @@ In Java there are several ways to parse strings into Date objects. In this exper
 
 * java.time.LocalDate
 * java.time.LocalDateTime
-* java.time.format.DateTimeFormatter
+* java.text.SimpleDateFormat
 
-The code for the experiment is available in the file DateParsingBenchmark.java. Run the program several times and vary the order of each of the methods in order to ensure consistent results and reduce sources of bias.
+The code for the experiment is available in the file DateParsingBenchmark.java. Run the program several times and vary the order of each of the methods to ensure consistent results and reduce sources of bias.
 
