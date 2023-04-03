@@ -1,8 +1,8 @@
-# Green Software Development Workshop: Creating Experiments to Make Green Choices
+# Experimenting for More Efficient and Green Software
 
 ## Part 1: Introduction
 
-Welcome to the Green Software Development workshop focused on creating experiments to make green choices! In this workshop, you will learn how to design and conduct experiments to determine how to develop software that is environmentally friendly and sustainable.
+Welcome to this workshop which focuses on creating experiments to help make decicions for more efficient and green software! You will learn how to design and conduct experiments to determine how to develop software that is time and resource efficient and, by extention, aslo environmentally friendly.
 
 ### Objectives
 
@@ -10,7 +10,7 @@ The objectives of this workshop are:
 
 * To understand the importance of green software development
 * To learn how to design and conduct experiments
-* Make green choices when writing software
+* Make choices that result in more efficient and greener code
 * Have fun answering questions
 
 
@@ -25,7 +25,7 @@ find a question. Step two is too design an experiment to answer, or reduce uncer
 that are warrented and finally publish your results and, preferably, use them
 to inform future decisinos.
 
-![question -> design -> run -> publish](figures/experiment_flow.png "Experiment flow")
+![Overview of an experient: question → design → run → publish](figures/experiment_flow.png "Experiment flow")
 
 
 
