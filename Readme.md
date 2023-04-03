@@ -59,7 +59,8 @@ answers,  an always improve on the experiment to increase confidence
 in your results. It can also be useful to vary the conditions under which
 an experiment is conducted.
 
-When designing an experiment where direct measurement is difficult, you first have to decide on proxies to measure. Perhaps the simplest way to create an experiment for measuring energy consumption is to measure time it takes to complete a task since time is strongly correlated with energy use. 
+When designing an experiment where direct measurement is difficult, you first have to decide on proxies to measure. Perhaps the simplest way to create an experiment for measuring run-time and energy efficency is to measure time it takes to complete a task. Time and energy efficency are strongly corrolated, however one should be aware that
+there are situations when they diverge.
 
 Next, you should decide on what to measure. If your question is on the form
 is it (much) more efficient to do x by doing x rather than y, one strategy may be to implement one program that uses the x approach and one that uses y. An example of this, if we are interested in knowing whether one way of parsing dates is more efficient than another might be to create a program that times and performs the operation a number of times in one way, and another program that does the same and only differs by parsing the date in some other way. Another approach, shown below might be to do both sequentially in a single program.
