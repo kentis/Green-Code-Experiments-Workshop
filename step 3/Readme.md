@@ -1,14 +1,14 @@
 # Running the experiments
 
-Run your experiment and record the results. In the following I have recorded the results of running each of the example experiments below. All experiments here have been run on a 2016 Macbbok Pro laptop with 2.7 GHz four-cores Inten Core I7 CPU and 16GB 2133MHz RAM.
+Run your experiment and record the results. In the following I have recorded the results of running each of the example experiments below. All experiments here have been run on a 2016 Macbook Pro laptop with 2.7 GHz four-cores Intel Core I7 CPU and 16GB 2133MHz RAM.
 
 
 ## Q1: Value inside outside loop
 
-The table below shows the results of running the provided software ```python3 run_both_using_timer.py``` 5 five times with the inside loop block first (Original 1-5) and 5 times with the insode loop block last (Reverse 1-5). We can see that the results seem reasonably consisten and can thus conclude that the experiment supports the hyphthess that, in Python, it is in deed faster to initiate
+The table below shows the results of running the provided software ```python3 run_both_using_timer.py``` 5 five times with the inside loop block first (Original 1-5) and 5 times with the inside loop block last (Reverse 1-5). We can see that the results seem reasonably consistent and can thus conclude that the experiment supports the hypothesis that, in Python, it is in deed faster to initiate
 values outside loops rather than inside.
 
-|Order / run # |Initiation inside loop     | Initiation oouotside loop | Diff|
+|Order / run # |Initiation inside loop     | Initiation outside loop | Diff|
 |--------------|---------------------------|---------------------------|--------|
 |Original 1    | 1,53                      | 1,27                      |   0,25 |
 |Original 2    | 1,47                      | 1,25                      |   0,23 |
@@ -25,9 +25,9 @@ values outside loops rather than inside.
 Suggested bonus work: redo the experiment using Java.
 
 
-## Q2: Unnecesary async/await
+## Q2: Unnecessary async/await
 
-In this experiment we create two seperate experiemts to explore the cost of async/await in isolation and in a somewhat
+In this experiment we create two separate experiments to explore the cost of async/await in isolation and in a somewhat
 more realistic scenario when reading a file.
 
 The code for the first experiment, using async/await in a trivial case, is found in the ```empty loop```folder. The table below shows the results of running the experiment 5 times with the loop using async/await first (Original 1-5) and 5 times with the non-async loop first (Reverse 1-5). To run the experiment for yourself install the dotnet SDK and run ```dotnet run``` in the codes folder.
@@ -47,7 +47,7 @@ The code for the first experiment, using async/await in a trivial case, is found
 |Reverse 5|734|63|671|
 
 
-The code for the second experiment, using async/await to read a file consistiong of the numbers 1-1000000 one one line each, parse numbers and add them together, is found tin e the ```read file```folder.  The table below shows the results of running the experiment 5 times with the loop using async/await first (Original 1-5) and 5 times with the non-async loop first (Reverse 1-5). To run the experiment for yourself install the dotnet SDK and run ```dotnet run``` in the codes folder.
+The code for the second experiment, using async/await to read a file consisting of the numbers 1-1000000 one one line each, parse numbers and add them together, is found tin e the ```read file```folder.  The table below shows the results of running the experiment 5 times with the loop using async/await first (Original 1-5) and 5 times with the non-async loop first (Reverse 1-5). To run the experiment for yourself install the dotnet SDK and run ```dotnet run``` in the codes folder.
 
 
 |Order / run # |With async (ms)     | Without async (ms) | Diff|
@@ -64,11 +64,11 @@ The code for the second experiment, using async/await to read a file consistiong
 |Reverse 4|193|105|88|
 |Reverse 5|193|106|87|
 
-Bonus exercise left for the participant: Try removing the warmup rounds and/or use a shorter file and re-runthe expeiment with both orders.
+Bonus exercise left for the participant: Try removing the warmup rounds and/or use a shorter file and re-run the experiment with both orders.
 
 ## Q3: Parsing dates
 
-In this experiment we have a Java CLI program that is compiled using the command ```javac DateParsingBenchmark.java``` and run using ```java DateParsingBenchmark```. The table below show the running times of parsing 10 000 dates with each og the date parsers:
+In this experiment we have a Java CLI program that is compiled using the command ```javac DateParsingBenchmark.java``` and run using ```java DateParsingBenchmark```. The table below show the running times of parsing 10 000 dates with each of the date parsers:
 * java.time.LocalDate
 * java.time.LocalDateTime
 * java.text.SimpleDateFormat
