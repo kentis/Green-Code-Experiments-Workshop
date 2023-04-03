@@ -1,4 +1,4 @@
-# Experimenting for More Efficient and Green Software
+# Experimenting for More Efficient and Green Code
 
 ## Part 1: Introduction
 
