@@ -31,7 +31,7 @@ public class Program {
     }
 
     public static void Main(){
-        const int numIterations = 10;
+        const int numIterations = 50;
         var program =  new Program();
         var insideResults = new List<long>(numIterations);
         var outsideResults = new List<long>(numIterations);
