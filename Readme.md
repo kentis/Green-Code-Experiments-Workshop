@@ -42,11 +42,12 @@ provided example experiment designs and code. To get maximal effect of this work
 
 ### List of questions
 
-*Q1: What is the effect of declaring a value inside vs outside a loop in
+* Q1: What is the effect of declaring a value inside vs outside a loop in
     * Python
     * Java
-*Q2: What is the effect of using async/await in c# where it is not entirely Necessary[D[D[D[D[D[D[D[n?
-*Q3: What is the most efficient way to parse a date in Java?
+    * c#
+* Q2: What is the effect of using async/await in C# where it is not entirely necessary?
+* Q3: What is the most efficient way to parse a date in C#/Java?
 
 
 
