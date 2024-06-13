@@ -4,7 +4,9 @@
     * Python
     * Java
 * Q2: What is the effect of using async/await in c# where it is not entirely necessary?
-* Q3: What is the most efficient way to parse a date in Java?
+* Q3: What is the most efficient way to parse a date?
+* Q4: What is the most efficient way to concatinate strings?
+* Q5: What is the best language for regular expressions?
 
 
 ## Other Questions (For inspiration only, experiment designs and code is not provided)
