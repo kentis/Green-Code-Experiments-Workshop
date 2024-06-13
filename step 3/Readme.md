@@ -66,7 +66,7 @@ The code for the second experiment, using async/await to read a file consisting 
 
 Bonus exercise left for the participant: Try removing the warmup rounds and/or use a shorter file and re-run the experiment with both orders.
 
-## Q3: Parsing dates
+## Q3: Parsing dates (Java)
 
 In this experiment we have a Java CLI program that is compiled using the command ```javac DateParsingBenchmark.java``` and run using ```java DateParsingBenchmark```. The table below show the running times of parsing 10 000 dates with each of the date parsers:
 * java.time.LocalDate
