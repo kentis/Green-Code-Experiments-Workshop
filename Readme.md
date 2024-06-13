@@ -47,8 +47,9 @@ provided example experiment designs and code. To get maximal effect of this work
     * Java
     * c#
 * Q2: What is the effect of using async/await in C# where it is not entirely necessary?
-* Q3: What is the most efficient way to parse a date in C#/Java?
-
+* Q3: What is the most efficient way to parse a date?
+* Q4: What is the most efficient way to concatinate strings?
+* Q5: What is the best language for regular expressions?
 
 
 ## Step 2: Designing your Experiment
