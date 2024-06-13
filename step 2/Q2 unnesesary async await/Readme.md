@@ -1,4 +1,4 @@
-# Design of Q2 unnecessary[D[D[D[D[D[D[D[D[D[U async await experiment
+# Design of Q2 unnecessary async await experiment
 
 In order to try to determine the effect of using async/await when it is not really necessary we will create two Dotnet CLI applications using C#. 
 
