@@ -81,3 +81,42 @@ In this experiment we have a Java CLI program that is compiled using the command
 |4|54,94|64,24|89,38|
 |5|50,81|65,91|95,61|
 
+## Q4: What is the most efficient way to concatinate strings? (dotnet)
+In this experiment we have a CLI program in the `dotnet` directory that we can run using `dotnet run`. The experiment will run varying the number of strings to concatinate.
+
+|# string| Method| Time (ms)|
+|--------|-------|----------|
+|100|Add (+)|1935|
+|100|Template strings|1915|
+|100|Stringbuilder|517|
+|100|string.Join|728|
+|--------|-------|----------|
+|50|Add (+)|656|
+|50|Template strings|659|
+|50|Stringbuilder|292|
+|50|string.Join|370|
+|--------|-------|----------|
+|25|Add (+)|261|
+|25|Template strings|255|
+|25|Stringbuilder|174|
+|25|string.Join|196|
+|--------|-------|----------|
+|12|Add (+)|107|
+|12|Template strings|107|
+|12|Stringbuilder|98|
+|12|string.Join|94|
+|--------|-------|----------|
+|6|Add (+)|50|
+|6|Template strings|50|
+|6|Stringbuilder|60|
+|6|string.Join|54|
+|--------|-------|----------|
+|3|Add (+)|25|
+|3|Template strings|25|
+|3|Stringbuilder|29|
+|3|string.Join|33|
+|--------|-------|----------|
+|2|Add (+)|9|
+|2|Template strings|8|
+|2|Stringbuilder|23|
+|2|string.Join|24|
