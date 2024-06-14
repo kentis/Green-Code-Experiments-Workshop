@@ -14,3 +14,5 @@
 * Which is the faster option for a serverless function, c# or Rust compiled to WASM?
 * What is the cost of using reflection based parsers vs taking the trouble
 of creating custom parser for every object.
+* What is the performance hit of parsing/serializing Bson vs Json?
+* What is the fastest way to read a large file?
