@@ -9,7 +9,7 @@ public class Program {
         sw.Start();
         var y=0;
         for(var i = 0; i < 10_000_000; i++){
-            int z = 1 + 1;
+            const int z = 1 + 1;
             y = y + z;
         }
         sw.Stop();
@@ -21,7 +21,7 @@ public class Program {
         // Initialize variable outside the loop
         sw.Start();
         var y = 0;
-        int z = 1 + 1;
+        const int z = 1 + 1;
         for(var i = 0; i < 10_000_000; i++){
             y = y + z;
         }

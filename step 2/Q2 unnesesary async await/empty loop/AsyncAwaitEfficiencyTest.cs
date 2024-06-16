@@ -8,28 +8,35 @@ namespace AsyncAwaitEfficiencyTest
     {
         static async Task Main(string[] args)
         {
-            const int iterationCount = 1_0_000_000;
+            const int iterationCount = 10_000_000;
 
-            // Test unnecessary async/await usage
-	        var count1 = 0;
+            // Warmup
+            await UnnecessaryAsyncAwait();
+            NoAsyncAwait();
             var stopwatch = Stopwatch.StartNew();
-            for (int i = 0; i < iterationCount; i++)
-            {
-                count1 += await UnnecessaryAsyncAwait();
-            }
-            stopwatch.Stop();
-            Console.WriteLine($"Unnecessary async/await: {stopwatch.ElapsedMilliseconds} ms");
 
-	        // Test without unnecessary async/await
+// Test without unnecessary async/await
             var count2 = 0;
-            stopwatch.Restart();
+            
             for (int i = 0; i < iterationCount; i++)
             {
                 count2 += NoAsyncAwait();
             }
             stopwatch.Stop();
             Console.WriteLine($"No async/await: {stopwatch.ElapsedMilliseconds} ms");
-	        Console.WriteLine($"count1: {count1} count2: {count2}");
+	        
+            
+            // Test unnecessary async/await usage
+	        var count1 = 0;
+            stopwatch.Restart();
+            for (int i = 0; i < iterationCount; i++)
+            {
+                count1 += await UnnecessaryAsyncAwait();
+            }
+            stopwatch.Stop();
+            Console.WriteLine($"Unnecessary async/await: {stopwatch.ElapsedMilliseconds} ms");
+Console.WriteLine($"count1: {count1} count2: {count2}");
+	        
         }
 
         static async Task<int> UnnecessaryAsyncAwait()

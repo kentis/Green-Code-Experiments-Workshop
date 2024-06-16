@@ -22,7 +22,7 @@ namespace AsyncTest
             string filePath = "numbers.txt";
 
             //warmup
-            ReadAndSumNumbersAsync(filePath);
+            await ReadAndSumNumbersAsync(filePath);
             ReadAndSumNumbersSync(filePath);
             
             

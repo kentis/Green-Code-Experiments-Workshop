@@ -21,9 +21,9 @@ public class RegexSpeedTest {
         Matcher matcher = compiledPattern.matcher(content);
 
         int matches = matcher.groupCount();
-        // while (matcher.find()) {
-        //     matches++;
-        // }
+        while (matcher.find()) {
+            matches++;
+        }
 
         Instant end = Instant.now();
         Duration elapsed = Duration.between(start, end);
